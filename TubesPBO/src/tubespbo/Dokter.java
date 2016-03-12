@@ -7,7 +7,7 @@ package tubespbo;
 
 /**
  *
- * @author 8.1
+ * @author Fiqry
  */
 public class Dokter {
     private String spesialisasi;
