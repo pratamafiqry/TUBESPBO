@@ -5,6 +5,8 @@
  */
 package tubespbo;
 
+import static tubespbo.Console.menu;
+
 /**
  *
  * @author hariyanto
@@ -46,10 +48,8 @@ public class driver {
         r1.tambahPasienInap(pi01);
         r1.tambahPasienInap(pi02);
         
-        
-        
-                
-        
+        menu();
+       
         
     }
 }
