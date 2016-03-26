@@ -9,13 +9,24 @@ package tubespbo;
  *
  * @author Fiqry
  */
-public class Dokter {
+public class Dokter extends Orang {
     private String spesialisasi;
+
+    public Dokter(String nama, long id) {
+        super(nama, id);
+    }
     
     public void setSpesialisasi(String spesialisasi){
         this.spesialisasi = spesialisasi;
     }
     public String getSpesialisasi(){
         return spesialisasi;
-    }      
+    }
+
+    @Override
+    public String toString() {
+        return "Dokter{" + "spesialisasi=" + spesialisasi + '}';
+    }
+    
+    
 }

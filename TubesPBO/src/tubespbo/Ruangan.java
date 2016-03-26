@@ -5,6 +5,8 @@
  */
 package tubespbo;
 
+import java.util.Arrays;
+
 /**
  *
  * @author hariyanto
@@ -37,5 +39,16 @@ public class Ruangan {
     public String getNama(){
         return namaRuangan;
     }
+
+    public PasienInap[] getDaftarPasien() {
+        return daftarPasien;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Ruangan{" + "daftarPasien=" + Arrays.toString(daftarPasien) + ", namaRuangan=" + namaRuangan + '}';
+    }
+       
          
 }

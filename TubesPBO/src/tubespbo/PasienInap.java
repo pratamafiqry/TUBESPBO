@@ -5,13 +5,15 @@
  */
 package tubespbo;
 
+import java.util.Arrays;
+
 /**
  *
  * @author hariyanto
  */
 public class PasienInap {
-    private Pasien pasien =  new Pasien();
-    private Dokter dokter = new Dokter();
+    private Pasien pasien;
+    private Dokter dokter;
     private String[] diagnosa;
     private int ndiagnosa = 0;
     
@@ -45,4 +47,16 @@ public class PasienInap {
         diagnosa[y]= null;
         }
     }
+
+    public Pasien getPasien() {
+        return pasien;
+    }
+
+    
+    @Override
+    public String toString() {
+        return "PasienInap{" + "pasien=" + pasien + ", dokter=" + dokter + ", diagnosa=" + Arrays.toString(diagnosa) + ", ndiagnosa=" + ndiagnosa + '}';
+    }
+    
+    
 }

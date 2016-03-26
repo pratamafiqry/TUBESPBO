@@ -55,4 +55,11 @@ public abstract class Orang {
     {
         return alamat;
     }
+
+    @Override
+    public String toString() {
+        return "Orang{" + "nama=" + nama + ", alamat=" + alamat + ", id=" + id + '}';
+    }
+    
+    
 }

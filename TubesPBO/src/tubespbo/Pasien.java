@@ -9,9 +9,13 @@ package tubespbo;
  *
  * @author Fiqry
  */
-public class Pasien {
+public class Pasien extends Orang {
     private String tanggalDatang;
     private String keluhan;
+
+    public Pasien(String nama, long id, String alamat) {
+        super(nama, id, alamat);
+    }
     
     public void setTanggalDatang(String tanggalDatang){
         this.tanggalDatang = tanggalDatang;
@@ -25,4 +29,13 @@ public class Pasien {
     public String getKeluhan(){
         return keluhan;
     }
+    
+    
+
+    @Override
+    public String toString() {
+        return "Pasien{" + "tanggalDatang=" + tanggalDatang + ", keluhan=" + keluhan + '}';
+    }
+    
+    
 }
