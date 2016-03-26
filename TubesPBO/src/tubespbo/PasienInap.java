@@ -17,9 +17,16 @@ public class PasienInap {
     private String[] diagnosa;
     private int ndiagnosa = 0;
     
+    
+    
     public PasienInap(Pasien pasien){
         this.pasien = pasien;
     }
+
+    public void setPasien(Pasien pasien) {
+        this.pasien = pasien;
+    }
+    
     
     public void setDokter(Dokter d){
         dokter = d;

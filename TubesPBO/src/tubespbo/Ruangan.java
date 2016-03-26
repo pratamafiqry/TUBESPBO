@@ -22,10 +22,14 @@ public class Ruangan {
         maxPasien = 4;
         PasienInap[] daftarPasien = new PasienInap[maxPasien];
     }
-    
-    public void tambahPasienInap(PasienInap daftarPasien){
-        this.daftarPasien[nPasien] = daftarPasien;
+     
+    public void tambahPasienInap(PasienInap pi){
+        if(nPasien <= maxPasien){
+        this.daftarPasien[nPasien] = pi;
         nPasien++;
+        }else {
+            System.out.println("Ruangan Penuh");
+        }
     }
     
     public PasienInap getPasienInapByIndex(int x){
