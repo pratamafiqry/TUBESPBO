@@ -20,7 +20,7 @@ public class Ruangan {
     public Ruangan(String namaRuangan){
         this.namaRuangan = namaRuangan;
         maxPasien = 4;
-        PasienInap[] daftarPasien = new PasienInap[maxPasien];
+        daftarPasien = new PasienInap[maxPasien];
     }
      
     public void tambahPasienInap(PasienInap pi){
@@ -47,7 +47,6 @@ public class Ruangan {
     public PasienInap[] getDaftarPasien() {
         return daftarPasien;
     }
-
 
     @Override
     public String toString() {
