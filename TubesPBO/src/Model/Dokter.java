@@ -3,30 +3,51 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package tubespbo;
+package Model;
 
 /**
  *
  * @author Fiqry
  */
 public class Dokter extends Orang {
+
     private String spesialisasi;
 
     public Dokter(String nama, long id) {
         super(nama, id);
     }
-    
-    public void setSpesialisasi(String spesialisasi){
+
+    public void setSpesialisasi(String spesialisasi) {
         this.spesialisasi = spesialisasi;
     }
-    public String getSpesialisasi(){
+
+    public String getSpesialisasi() {
         return spesialisasi;
+    }
+    
+        @Override
+    public void setNama(String nama) {
+        super.setNama(nama);
+    }
+
+    @Override
+    public String getNama() {
+        return super.getNama();
+    }
+
+    @Override
+    public void setId(long id) {
+        super.setId(id);
+    }
+
+    @Override
+    public long getId() {
+        return super.getId();
     }
 
     @Override
     public String toString() {
         return "Dokter{" + "spesialisasi=" + spesialisasi + '}';
     }
-    
-    
+
 }

@@ -3,39 +3,61 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package tubespbo;
+package Model;
 
 /**
  *
  * @author Fiqry
  */
 public class Pasien extends Orang {
+
     private String tanggalDatang;
     private String keluhan;
 
     public Pasien(String nama, long id, String alamat) {
         super(nama, id, alamat);
     }
-    
-    public void setTanggalDatang(String tanggalDatang){
-        this.tanggalDatang = tanggalDatang;
-    }
-    public String getTanggalDatang(){
-        return tanggalDatang;
-    }
-    public void setKeluhan(String keluhan){
+
+    public void setKeluhan(String keluhan) {
         this.keluhan = keluhan;
     }
-    public String getKeluhan(){
+
+    public String getKeluhan() {
         return keluhan;
     }
     
-    
+    @Override
+    public void setNama(String nama) {
+        super.setNama(nama);
+    }
+
+    @Override
+    public String getNama() {
+        return super.getNama();
+    }
+
+    @Override
+    public void setId(long id) {
+        super.setId(id);
+    }
+
+    @Override
+    public long getId() {
+        return super.getId();
+    }
+
+    @Override
+    public void setAlamat(String alamat){
+        super.setAlamat(alamat);
+    }
+    @Override
+    public String getAlamat() {
+        return super.getAlamat();
+    }
 
     @Override
     public String toString() {
         return "Pasien{" + "tanggalDatang=" + tanggalDatang + ", keluhan=" + keluhan + '}';
     }
-    
-    
+
 }
